@@ -13,4 +13,9 @@ class TweetCell: UITableViewCell {
   @IBOutlet weak var nickLabel: UILabel!
   @IBOutlet weak var contentLabel: UILabel!
   @IBOutlet weak var collectionView: UICollectionView!
+  
+  func configure(with tweet: Tweet) {
+    nickLabel.text = tweet.sender?.nick ?? ""
+    contentLabel.text = tweet.content ?? ""
+  }
 }
