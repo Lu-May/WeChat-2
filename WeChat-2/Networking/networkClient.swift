@@ -8,9 +8,9 @@
 import Foundation
 import Alamofire
 
-struct JsonDatasNetWorkClient {
-  func request(url: URL, completion: @escaping (Any?, Error?) -> Void) {
-    AF.request(url).validate().responseJSON { dataResponse in
+struct netWorkClient {
+  func request(url: URL, completion: @escaping (Data?, Error?) -> Void) {
+    AF.request(url).validate().responseData { dataResponse in
       switch dataResponse.result {
       case .success(_):
         completion(dataResponse.data, nil)
