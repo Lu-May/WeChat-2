@@ -16,15 +16,8 @@ class DiskCache {
   
   lazy var documentPath = documentsURL.path
   
-  private func getPath(url: String) -> String {
-    let array = url.split(separator: "/")
-    let pathString = array[array.count - 2] + array[array.count - 1]
-    return String(pathString)
-  }
-  
   func saveImage(url: String, image: UIImage){
-    
-    let pathString = getPath(url: url)
+    let pathString = URLService.hash(url: url)
     let filePath = documentsURL.appendingPathComponent("\(pathString)")
     
     do {
@@ -38,7 +31,7 @@ class DiskCache {
   }
   
   func getImage(url: String) -> UIImage? {
-    let pathString = getPath(url: url)
+    let pathString = URLService.hash(url: url)
     let filePath = documentsURL.appendingPathComponent("\(pathString)")
     
     return UIImage(contentsOfFile: filePath.path)

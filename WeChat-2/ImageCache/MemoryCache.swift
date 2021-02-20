@@ -13,10 +13,10 @@ class MemoryCache {
   var cache = NSCache<NSString, UIImage>()
   
   func getImage(url: String) -> UIImage? {
-    return cache.object(forKey: url as NSString)
+    return cache.object(forKey: URLService.hash(url: url) as NSString)
   }
   
   func saveImage(url: String, image: UIImage) {
-    cache.setObject(image, forKey: url as NSString)
+    cache.setObject(image, forKey: URLService.hash(url: url) as NSString)
   }
 }

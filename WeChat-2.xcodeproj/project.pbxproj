@@ -28,6 +28,9 @@
 		7A07FC7E25DD1C99004B16F2 /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07FC7D25DD1C99004B16F2 /* DiskCache.swift */; };
 		7A07FC8425DD1CC4004B16F2 /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07FC8325DD1CC4004B16F2 /* MemoryCache.swift */; };
 		7A07FC8825DD1CD9004B16F2 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07FC8725DD1CD9004B16F2 /* ImageCache.swift */; };
+		7A07FC9225DD1ED0004B16F2 /* TweetImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A07FC9125DD1ED0004B16F2 /* TweetImageCell.xib */; };
+		7A07FC9625DD1F37004B16F2 /* TweetImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07FC9525DD1F37004B16F2 /* TweetImageCell.swift */; };
+		7A3F4C5625E10520001A0242 /* URLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F4C5525E10520001A0242 /* URLService.swift */; };
 		A6E94AA885C275CDDAA491B4 /* Pods_WeChat_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737947808E8430862CCE74B8 /* Pods_WeChat_2.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +73,9 @@
 		7A07FC7D25DD1C99004B16F2 /* DiskCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskCache.swift; sourceTree = "<group>"; };
 		7A07FC8325DD1CC4004B16F2 /* MemoryCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCache.swift; sourceTree = "<group>"; };
 		7A07FC8725DD1CD9004B16F2 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		7A07FC9125DD1ED0004B16F2 /* TweetImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetImageCell.xib; sourceTree = "<group>"; };
+		7A07FC9525DD1F37004B16F2 /* TweetImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetImageCell.swift; sourceTree = "<group>"; };
+		7A3F4C5525E10520001A0242 /* URLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLService.swift; sourceTree = "<group>"; };
 		A12EBEFB4652D911035AD988 /* Pods-WeChat-2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChat-2Tests.debug.xcconfig"; path = "Target Support Files/Pods-WeChat-2Tests/Pods-WeChat-2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A78FD2EED2C8761D654B638A /* Pods-WeChat-2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChat-2.debug.xcconfig"; path = "Target Support Files/Pods-WeChat-2/Pods-WeChat-2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +175,8 @@
 				7A07FC3A25CD270C004B16F2 /* TweetCell.swift */,
 				7A07FC6E25D13446004B16F2 /* TweetsHeader.xib */,
 				7A07FC7225D13731004B16F2 /* TweetsHeader.swift */,
+				7A07FC9125DD1ED0004B16F2 /* TweetImageCell.xib */,
+				7A07FC9525DD1F37004B16F2 /* TweetImageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +222,7 @@
 				7A07FC7D25DD1C99004B16F2 /* DiskCache.swift */,
 				7A07FC8325DD1CC4004B16F2 /* MemoryCache.swift */,
 				7A07FC8725DD1CD9004B16F2 /* ImageCache.swift */,
+				7A3F4C5525E10520001A0242 /* URLService.swift */,
 			);
 			path = ImageCache;
 			sourceTree = "<group>";
@@ -304,6 +313,7 @@
 				7A07FC0A25CD1FCD004B16F2 /* LaunchScreen.storyboard in Resources */,
 				7A07FC6F25D13446004B16F2 /* TweetsHeader.xib in Resources */,
 				7A07FC0725CD1FCD004B16F2 /* Assets.xcassets in Resources */,
+				7A07FC9225DD1ED0004B16F2 /* TweetImageCell.xib in Resources */,
 				7A07FC0525CD1FC8004B16F2 /* Main.storyboard in Resources */,
 				7A07FC3725CD2140004B16F2 /* TweetCell.xib in Resources */,
 			);
@@ -400,7 +410,9 @@
 				7A07FC5325CF893C004B16F2 /* Tweet.swift in Sources */,
 				7A07FC0025CD1FC8004B16F2 /* SceneDelegate.swift in Sources */,
 				7A07FC8825DD1CD9004B16F2 /* ImageCache.swift in Sources */,
+				7A07FC9625DD1F37004B16F2 /* TweetImageCell.swift in Sources */,
 				7A07FC3B25CD270C004B16F2 /* TweetCell.swift in Sources */,
+				7A3F4C5625E10520001A0242 /* URLService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
